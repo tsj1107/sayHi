@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		07EE9C241CA2C93E00C412BF /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EE9C231CA2C93E00C412BF /* logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07EE9C2C1CA2C98F00C412BF /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE9C2B1CA2C98F00C412BF /* logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07EE9C201CA2C93E00C412BF /* logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EE9C231CA2C93E00C412BF /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
 		07EE9C251CA2C93E00C412BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EE9C2B1CA2C98F00C412BF /* logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				07EE9C231CA2C93E00C412BF /* logger.h */,
 				07EE9C251CA2C93E00C412BF /* Info.plist */,
+				07EE9C2B1CA2C98F00C412BF /* logger.swift */,
 			);
 			path = logger;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EE9C2C1CA2C98F00C412BF /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +235,7 @@
 		07EE9C291CA2C93E00C412BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -241,12 +246,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoshuai.logger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07EE9C2A1CA2C93E00C412BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
